@@ -23,9 +23,9 @@ namespace WFA_Shooter_Game
             {
                 Enemies[i].Move();
                 if(Enemies[i].Image.Location.Y > form.Height)
-                {
-                    Enemies.Remove(Enemies[i]);
+                { 
                     Enemies[i].Image.Parent = null;
+                    Enemies.Remove(Enemies[i]);                  
                     i--;
                     FortHP -= 20;
                     CheckIfYouLost();
